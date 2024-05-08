@@ -2,7 +2,7 @@ import Home from '../home/Home';
 import Profile from '../home/Profile';
 import AttendanceRecords from '../home/AttendanceRecords';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Camera from '../home/Camera';
+import FaceRegistration from '../home/FaceRegistration';
 
 const screens = [
     {
@@ -12,8 +12,8 @@ const screens = [
       icon: ({ color, size }) => <Icon name="home" color={color} size={size} />,
     },
     {
-      name: 'Camera',
-      component: Camera,
+      name: 'FaceRegistration',
+      component: FaceRegistration,
       label: 'Scan Face',
       icon: ({ color, size }) => <Icon name="camera-marker" color={color} size={size} />,
     },

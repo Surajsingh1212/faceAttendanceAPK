@@ -3,7 +3,7 @@ import { Text, View, ImageBackground, Image,TouchableOpacity } from 'react-nativ
 import backgroundImg from '../../assets/img/background/profile-background.png';
 import profile from '../../assets/img/profile/profile.png';
 import { useNavigation } from '@react-navigation/native';
-
+import styles from '../../assets/css/custom';
 
 const Profile = () => {
   const navigation = useNavigation();
@@ -17,14 +17,14 @@ const Profile = () => {
           <Image source={profile} className="rounded-full h-36 w-36 " />
         </View>
         <View className="h-[30%] w-[100%] text-center">
-         <View className="text-center">
-         <Text className="text-black font-bold text-xl"> Employee Name : Suraj Singh </Text>
-          <Text className="text-black font-bold text-xl"> Employee ID : 20240023 </Text>
-          <Text className="text-black font-bold text-xl"> Department : Development </Text>
-          <Text className="text-black font-bold text-xl"> Email : suraj@gmail.com </Text> 
-          <Text className="text-black font-bold text-xl"> Password : 12ew3df</Text>
-          <Text className="text-black font-bold text-xl"> Joining Date : 03/05/2024</Text>
-          <Text className="text-black font-bold text-xl"> Work Time : 10:00 AM  to 06:00 PM</Text>
+         <View className="text-center" style={styles.boxShadow}>
+         <Text className="text-black text-xl"> Employee Name : Suraj Singh </Text>
+          <Text className="text-black text-xl"> Employee ID : 20240023 </Text>
+          <Text className="text-black text-xl"> Department : Development </Text>
+          <Text className="text-black text-xl"> Email : suraj@gmail.com </Text> 
+          <Text className="text-black text-xl"> Password : 12ew3df</Text>
+          <Text className="text-black text-xl"> Joining Date : 03/05/2024</Text>
+          <Text className="text-black text-xl"> Work Time : 10:00 AM  to 06:00 PM</Text>
          </View>
         </View>
         <TouchableOpacity onPress={handleUpdateProfile} className="bg-red-500 rounded-md items-center w-[100%] py-4 px-10 absolute bottom-20">

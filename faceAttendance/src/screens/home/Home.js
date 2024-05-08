@@ -7,6 +7,7 @@ const Home = () => {
         <Text className="text-white font-bold text-xl">
             This is Home Screen 
         </Text>
+        
     </View>
   )
 }
